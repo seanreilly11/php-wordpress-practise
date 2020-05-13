@@ -7,4 +7,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
-Header boi
+<header class="bg-secondary">
+    <div class="container">
+    <?php
+        wp_nav_menu(
+            array('theme-location' => 'top-menu')
+        )
+    ?>
+    </div>
+</header>
